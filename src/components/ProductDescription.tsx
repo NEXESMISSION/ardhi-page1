@@ -40,21 +40,22 @@ export function ProductDescription() {
 
       {/* Land Overview - Reduced to 2 paragraphs */}
       <div className="text-center space-y-6 max-w-4xl mx-auto">
-        <h2 className="text-3xl font-semibold">À Propos d'ARDHI Terrain Premium</h2>
+        <h2 className="text-3xl font-semibold">À propos d'ARDHI Terrain Premium 🌿</h2>
         <p className="text-gray-700 leading-relaxed text-lg">
           Assurez votre avenir avec une opportunité d'investissement agricole unique. ARDHI Terrain Premium propose 
-          une parcelle d'exception à Sfax, Tanyour km 24, idéale pour la plantation d'oliviers. Ce terrain a été 
-          soigneusement sélectionné pour son potentiel agricole et son emplacement stratégique.
+          une parcelle d'exception à Sfax, Tanyour km 24, idéale pour la plantation d'oliviers 🌳. Ce terrain a été 
+          soigneusement sélectionné pour son potentiel agricole et son emplacement stratégique 📍.
         </p>
         <p className="text-gray-700 leading-relaxed">
-          Investissez dès aujourd'hui dans la prospérité de demain. Nos parcelles premium bénéficient de titres 
-          clairs, d'une accessibilité optimale, et sont situées dans des zones à fort développement avec un potentiel 
-          d'appréciation important.
+          Investissez dès aujourd'hui dans la prospérité de demain 💰. Nos parcelles premium bénéficient de titres 
+          clairs 📄, d'une accessibilité optimale 🚗, et sont situées dans des zones à fort développement avec un potentiel 
+          d'appréciation important 📈.
         </p>
-        <p className="text-gray-700 leading-relaxed">
-          Chaque réservation vous donne également une chance exclusive de gagner une parcelle supplémentaire 
-          de 2 000 m² grâce à notre loterie spéciale. Ne manquez pas cette opportunité de sécuriser un investissement 
-          durable et rentable.
+        <p className="text-gray-700 leading-relaxed font-semibold">
+          💸 Gagnez gros avec notre tirage au sort exclusif ! 🎉
+          <br />
+          Chaque réservation vous donne une chance de remporter une parcelle supplémentaire 
+          de 2 000 m², comme un vrai jackpot pour votre investissement !
         </p>
         
         {/* Basic Specifications */}
