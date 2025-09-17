@@ -241,8 +241,8 @@ export function ClientForm() {
             >
               {isSubmitting ? 'Traitement en cours...' : (
                 <>
-                  <span className="block sm:hidden">Réserver - 4 500 TND</span>
-                  <span className="hidden sm:block">Réserver Maintenant - 4 500 TND + Entrée Loterie</span>
+                  <span className="block sm:hidden">Réserver</span>
+                  <span className="hidden sm:block">Réserver Maintenant • Update</span>
                 </>
               )}
             </button>

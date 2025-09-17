@@ -97,8 +97,8 @@ export const ProductPage = () => {
           className="bg-gradient-to-r from-[#76B935] to-[#4D8F1C] hover:from-[#6DAD30] hover:to-[#427A17] text-white font-semibold py-2 sm:py-3 px-4 sm:px-6 rounded-full shadow-lg flex items-center space-x-2 transition-transform hover:scale-105 animate-pulse text-sm sm:text-base"
         >
           <MapPin className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
-          <span className="block sm:hidden">Rendez-vous visite</span>
-          <span className="hidden sm:block">Réserver un rendez-vous pour visite</span>
+          <span className="block sm:hidden">Réserver • Update</span>
+          <span className="hidden sm:block">Réserver votre visite • Update</span>
         </button>
       </div>
     </div>

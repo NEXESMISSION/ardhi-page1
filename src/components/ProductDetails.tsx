@@ -92,8 +92,8 @@ export function ProductDetails() {
           className="bg-gradient-to-r from-[#76B935] to-[#4D8F1C] hover:from-[#6DAD30] hover:to-[#427A17] text-white font-semibold py-3 sm:py-4 px-4 sm:px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg text-base sm:text-lg w-full"
         >
           <>
-            <span className="block sm:hidden">Réserver votre parcelle</span>
-            <span className="hidden sm:block">Réserver votre parcelle maintenant</span>
+            <span className="block sm:hidden">Réserver</span>
+            <span className="hidden sm:block">Réserver votre parcelle • Update</span>
           </>
         </button>
       </div>
