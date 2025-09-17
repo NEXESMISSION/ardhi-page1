@@ -98,9 +98,12 @@ export function ProductDescription() {
           <div className="pt-4">
             <button
               onClick={scrollToForm}
-              className="bg-gradient-to-r from-[#76B935] to-[#4D8F1C] hover:from-[#6DAD30] hover:to-[#427A17] text-white font-semibold py-4 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg text-lg"
+              className="bg-gradient-to-r from-[#76B935] to-[#4D8F1C] hover:from-[#6DAD30] hover:to-[#427A17] text-white font-semibold py-3 sm:py-4 px-4 sm:px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg text-base sm:text-lg"
             >
-              <span className="whitespace-nowrap">Réserver Maintenant - 4 500 TND</span>
+              <>
+                <span className="block sm:hidden">Réserver - 4 500 TND</span>
+                <span className="hidden sm:block">Réserver Maintenant - 4 500 TND</span>
+              </>
             </button>
           </div>
         </div>

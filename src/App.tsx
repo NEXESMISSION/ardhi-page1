@@ -70,13 +70,14 @@ export default function App() {
       <WhatsAppButton />
       
       {/* Floating Visit Reservation Button */}
-      <div className="fixed bottom-4 left-4 z-50 md:left-1/2 md:transform md:-translate-x-1/2">
+      <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 w-auto max-w-[90%]">
         <button
           onClick={scrollToForm}
-          className="bg-gradient-to-r from-[#76B935] to-[#4D8F1C] hover:from-[#6DAD30] hover:to-[#427A17] text-white font-semibold py-3 px-6 rounded-full shadow-lg flex items-center space-x-2 transition-transform hover:scale-105 animate-pulse"
+          className="bg-gradient-to-r from-[#76B935] to-[#4D8F1C] hover:from-[#6DAD30] hover:to-[#427A17] text-white font-semibold py-2 sm:py-3 px-4 sm:px-6 rounded-full shadow-lg flex items-center space-x-2 transition-transform hover:scale-105 animate-pulse text-sm sm:text-base"
         >
-          <MapPin className="w-5 h-5" />
-          <span className="whitespace-nowrap">Réserver un rendez-vous pour visite</span>
+          <MapPin className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+          <span className="block sm:hidden">Rendez-vous visite</span>
+          <span className="hidden sm:block">Réserver un rendez-vous pour visite</span>
         </button>
       </div>
     </div>

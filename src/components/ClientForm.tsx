@@ -237,9 +237,14 @@ export function ClientForm() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`w-full bg-gradient-to-r from-[#76B935] to-[#4D8F1C] hover:from-[#6DAD30] hover:to-[#427A17] text-white font-semibold py-4 px-8 rounded-lg transition-all transform hover:scale-[1.02] shadow-lg text-lg ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
+              className={`w-full bg-gradient-to-r from-[#76B935] to-[#4D8F1C] hover:from-[#6DAD30] hover:to-[#427A17] text-white font-semibold py-3 sm:py-4 px-4 sm:px-8 rounded-lg transition-all transform hover:scale-[1.02] shadow-lg text-base sm:text-lg ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
             >
-              {isSubmitting ? 'Traitement en cours...' : <span className="whitespace-nowrap">Acheter Maintenant - 4 500 TND + Entrée Loterie</span>}
+              {isSubmitting ? 'Traitement en cours...' : (
+                <>
+                  <span className="block sm:hidden">Acheter - 4 500 TND</span>
+                  <span className="hidden sm:block">Acheter Maintenant - 4 500 TND + Entrée Loterie</span>
+                </>
+              )}
             </button>
           </div>
         </form>
