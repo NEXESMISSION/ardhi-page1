@@ -49,7 +49,7 @@ export function ProductDescription() {
         <p className="text-gray-700 leading-relaxed">
           Investissez dans la prospérité de demain aujourd'hui. Nos parcelles de terrain premium sont livrées avec des titres 
           clairs, une excellente accessibilité, et sont situées dans des zones en développement rapide avec un fort potentiel 
-          d'appréciation. Chaque achat inclut une entrée automatique à notre loterie exclusive pour une chance de gagner une 
+          d'appréciation. Chaque réservation inclut une entrée automatique à notre loterie exclusive pour une chance de gagner une 
           parcelle supplémentaire de 2 000 m².
         </p>
         
@@ -81,7 +81,7 @@ export function ProductDescription() {
         </div>
       </div>
 
-      {/* Lottery Section with Buy Button */}
+      {/* Lottery Section with Reservation Button */}
       <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-8">
         <div className="text-center space-y-6">
           <div className="flex items-center justify-center space-x-2">
@@ -89,12 +89,12 @@ export function ProductDescription() {
             <h2 className="text-2xl font-semibold text-yellow-800">🎉 Tirage au Sort Spécial !</h2>
           </div>
           <p className="text-yellow-700 text-lg max-w-3xl mx-auto">
-            Chaque achat vous inscrit automatiquement à notre tirage au sort exclusif pour gagner un 
+            Chaque réservation vous inscrit automatiquement à notre tirage au sort exclusif pour gagner un 
             <strong> terrain supplémentaire de 2 000 m² entièrement GRATUIT !</strong>
           </p>
           <p className="text-yellow-600 text-sm">Tirage mensuel. Conditions générales applicables.</p>
           
-          {/* Buy Button */}
+          {/* Reservation Button */}
           <div className="pt-4">
             <button
               onClick={scrollToForm}

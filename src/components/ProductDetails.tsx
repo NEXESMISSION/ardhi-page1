@@ -79,7 +79,7 @@ export function ProductDetails() {
       <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
         <h3 className="font-semibold text-yellow-800 mb-2">🎉 Tirage au Sort Spécial !</h3>
         <p className="text-yellow-700 text-sm">
-          Chaque achat vous inscrit automatiquement à notre tirage au sort exclusif pour gagner un 
+          Chaque réservation vous inscrit automatiquement à notre tirage au sort exclusif pour gagner un 
           <strong> terrain supplémentaire de 2 000 m² entièrement GRATUIT !</strong>
         </p>
         <p className="text-yellow-600 text-xs mt-2">Tirage mensuel. Conditions générales applicables.</p>

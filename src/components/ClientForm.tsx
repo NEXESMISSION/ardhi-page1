@@ -232,7 +232,7 @@ export function ClientForm() {
             />
           </div>
 
-          {/* Buy Now Button - Full width on both columns */}
+          {/* Reservation Button - Full width on both columns */}
           <div className="lg:col-span-2 pt-4">
             <button
               type="submit"
@@ -241,8 +241,8 @@ export function ClientForm() {
             >
               {isSubmitting ? 'Traitement en cours...' : (
                 <>
-                  <span className="block sm:hidden">Acheter - 4 500 TND</span>
-                  <span className="hidden sm:block">Acheter Maintenant - 4 500 TND + Entrée Loterie</span>
+                  <span className="block sm:hidden">Réserver - 4 500 TND</span>
+                  <span className="hidden sm:block">Réserver Maintenant - 4 500 TND + Entrée Loterie</span>
                 </>
               )}
             </button>
@@ -250,8 +250,8 @@ export function ClientForm() {
         </form>
 
         <div className="text-center mt-6 space-y-2">
-          <p className="text-sm text-gray-500">Achat sécurisé • Documentation légale • Garantie 30 jours</p>
-          <p className="text-xs text-gray-400">🔒 Paiement 100% sécurisé | 📋 Tous documents légaux inclus | 🎁 Entrée loterie automatique</p>
+          <p className="text-sm text-gray-500">Réservation sécurisée • Documentation légale • Garantie 30 jours</p>
+          <p className="text-xs text-gray-400">🔒 Réservation sécurisée | 📍 Tous documents légaux inclus | 🎁 Entrée loterie automatique</p>
         </div>
       </div>
     </div>
