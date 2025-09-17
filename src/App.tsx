@@ -5,15 +5,30 @@ import { ProductDescription } from './components/ProductDescription';
 import { ClientForm } from './components/ClientForm';
 import { WhatsAppButton } from './components/WhatsAppButton';
 import { CountdownTimer } from './components/CountdownTimer';
+import { MapPin } from 'lucide-react';
 
 export default function App() {
-  const mainProductImage = "https://images.unsplash.com/photo-1685266325930-ffe4937f6eb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBsYW5kJTIwcGxvdCUyMHByb3BlcnR5JTIwZGV2ZWxvcG1lbnR8ZW58MXx8fHwxNzU3NjEwOTc3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
+  const scrollToForm = () => {
+    const formElement = document.getElementById('client-form');
+    if (formElement) {
+      formElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+  // Using POST 2.png as the main image
+  const mainProductImage = "/POST 2.png";
   
+  // Using the thumbnails from imgbb with POST 2.png as first image
   const thumbnailImages = [
-    "https://images.unsplash.com/photo-1659287588324-670572d02cc5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2YWNhbnQlMjBsYW5kJTIwYWVyaWFsJTIwdmlldyUyMGRldmVsb3BtZW50fGVufDF8fHx8MTc1NzYxMDk4MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    mainProductImage,
-    "https://images.unsplash.com/photo-1689574666546-75e1036e55fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXNpZGVudGlhbCUyMGxhbmQlMjBkZXZlbG9wbWVudCUyMGNvbnN0cnVjdGlvbnxlbnwxfHx8fDE3NTc2MTA5ODR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    "https://images.unsplash.com/photo-1606500307322-61cf2c98aab3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9wZXJ0eSUyMHN1cnZleSUyMGxhbmQlMjBtZWFzdXJlbWVudHxlbnwxfHx8fDE3NTc2MTA5ODd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    "/POST 2.png", // POST 2.png as first thumbnail
+    "https://i.ibb.co/chrnjvTY/process-planting-olive-trees-1.jpg", // Olive tree planting process
+    "https://i.ibb.co/FbTykfs0/stock-vector-olive-tree-growing-stages-froom-seed-seedling-sprout-flowering-ripe-olive-fruits-green.jpg", // Olive tree growth stages
+    "https://i.ibb.co/jkT16hvx/olive-branch-roots-held-by-260nw-2405641351.webp", // Olive branch with roots
+    "https://i.ibb.co/Q74gnqd5/Designer-29-300x300.png", // Designer olive tree
+    "https://i.ibb.co/zMDJ5Q0/Olive-tree-seedling-planted-in-a-hole.jpg", // Seedling in hole
+    "https://i.ibb.co/KjzfK2h6/olive-tree-help-v0-ygyi9r350voe1.webp", // Olive tree help
+    "https://i.ibb.co/PZ2T3sQn/Olive-Tree-Soil.jpg", // Olive tree soil
+    "https://i.ibb.co/4RsZv8m6/Planting-Olive-Trees.jpg", // Planting olive trees
+    "https://i.ibb.co/FL5b3XGm/images-2.jpg" // Additional olive tree image
   ];
 
   return (
@@ -53,6 +68,17 @@ export default function App() {
       
       {/* WhatsApp Button - Fixed in bottom right corner */}
       <WhatsAppButton />
+      
+      {/* Floating Visit Reservation Button */}
+      <div className="fixed bottom-4 left-4 z-50 md:left-1/2 md:transform md:-translate-x-1/2">
+        <button
+          onClick={scrollToForm}
+          className="bg-gradient-to-r from-[#76B935] to-[#4D8F1C] hover:from-[#6DAD30] hover:to-[#427A17] text-white font-semibold py-3 px-6 rounded-full shadow-lg flex items-center space-x-2 transition-transform hover:scale-105 animate-pulse"
+        >
+          <MapPin className="w-5 h-5" />
+          <span className="whitespace-nowrap">Réserver un rendez-vous pour visite</span>
+        </button>
+      </div>
     </div>
   );
 }

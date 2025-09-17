@@ -30,7 +30,7 @@ export function LocationMap({ latitude, longitude, googleMapsUrl }: LocationMapP
             href={googleMapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-lg transition-colors shadow-md flex items-center space-x-2"
+            className="bg-gradient-to-r from-[#76B935] to-[#4D8F1C] hover:from-[#6DAD30] hover:to-[#427A17] text-white py-2 px-6 rounded-lg transition-colors shadow-md flex items-center space-x-2"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-map">
               <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>

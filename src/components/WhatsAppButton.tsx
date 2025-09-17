@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 
 export const WhatsAppButton = () => {
-  const phoneNumber = '+21657037136';
+  const phoneNumber = '+216 57 037 136';
   const message = 'اريد انعرف المزيد من لتفاصيل'; // "I want to know more details" in Arabic
   const callLinkRef = useRef<HTMLAnchorElement>(null);
   
@@ -22,7 +22,7 @@ export const WhatsAppButton = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 flex flex-col space-y-4 z-50">
+    <div className="fixed bottom-24 sm:bottom-6 right-6 flex flex-col space-y-4 z-50">
       {/* Hidden anchor for phone call */}
       <a 
         ref={callLinkRef} 
@@ -35,7 +35,7 @@ export const WhatsAppButton = () => {
       
       {/* Phone Call Button */}
       <div 
-        className="bg-blue-500 rounded-full p-3 shadow-lg cursor-pointer hover:bg-blue-600 transition-all"
+        className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-full p-3 shadow-lg cursor-pointer hover:from-blue-600 hover:to-blue-700 transition-all"
         onClick={handleCallClick}
         title="Call us"
       >
@@ -52,7 +52,7 @@ export const WhatsAppButton = () => {
 
       {/* WhatsApp Button */}
       <div 
-        className="bg-green-500 rounded-full p-3 shadow-lg cursor-pointer hover:bg-green-600 transition-all"
+        className="bg-gradient-to-r from-[#76B935] to-[#4D8F1C] rounded-full p-3 shadow-lg cursor-pointer hover:from-[#6DAD30] hover:to-[#427A17] transition-all"
         onClick={handleWhatsAppClick}
         title="Contact via WhatsApp"
       >

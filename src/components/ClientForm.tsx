@@ -149,9 +149,9 @@ export function ClientForm() {
       
       <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 lg:p-12 shadow-lg border border-blue-100">
         <div className="space-y-4 mb-8 text-center">
-          <h2 className="text-3xl font-semibold" id="client-form">Réserver Votre Terrain Premium</h2>
+          <h2 className="text-3xl font-semibold" id="client-form">Réserver Votre Terrain Agricole</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Complétez ce formulaire pour réserver votre parcelle ARDHI Terrain Premium et bénéficier de nos offres de lancement exclusives. Un membre de notre équipe vous contactera dans les 24 heures.
+            Complétez ce formulaire pour réserver votre parcelle agricole de 400 m² à Sfax, Tanyour km 24, idéale pour زراعة زياتين. Un membre de notre équipe vous contactera dans les 24 heures.
           </p>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-4">
@@ -237,9 +237,9 @@ export function ClientForm() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`w-full bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black font-semibold py-4 px-8 rounded-lg transition-all transform hover:scale-[1.02] shadow-lg text-lg ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
+              className={`w-full bg-gradient-to-r from-[#76B935] to-[#4D8F1C] hover:from-[#6DAD30] hover:to-[#427A17] text-white font-semibold py-4 px-8 rounded-lg transition-all transform hover:scale-[1.02] shadow-lg text-lg ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
             >
-              {isSubmitting ? 'Traitement en cours...' : 'Acheter Maintenant - 125 000 € + Entrée Loterie'}
+              {isSubmitting ? 'Traitement en cours...' : <span className="whitespace-nowrap">Acheter Maintenant - 4 500 TND + Entrée Loterie</span>}
             </button>
           </div>
         </form>
