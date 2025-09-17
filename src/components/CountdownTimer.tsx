@@ -1,11 +1,30 @@
 import React, { useState, useEffect } from 'react';
 
+// Storage key for the countdown target date
+const COUNTDOWN_TARGET_KEY = 'ardhi_countdown_target';
+
 export const CountdownTimer = () => {
-  // Calculate target date (10 days from now)
+  // Calculate target date or retrieve it from localStorage
   const calculateTargetDate = () => {
+    // Try to get existing target date from localStorage
+    const savedTarget = localStorage.getItem(COUNTDOWN_TARGET_KEY);
+    
+    if (savedTarget) {
+      const targetDate = new Date(savedTarget);
+      // Only use the saved date if it's in the future
+      if (targetDate > new Date()) {
+        return targetDate;
+      }
+    }
+    
+    // If no valid saved date, create a new one (10 days from now)
     const now = new Date();
     const targetDate = new Date(now);
     targetDate.setDate(now.getDate() + 10);
+    
+    // Save to localStorage for persistence
+    localStorage.setItem(COUNTDOWN_TARGET_KEY, targetDate.toISOString());
+    
     return targetDate;
   };
 
