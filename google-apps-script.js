@@ -10,7 +10,7 @@
 // 1. Open your Google Sheet
 // 2. Look at the URL: https://docs.google.com/spreadsheets/d/YOUR_SPREADSHEET_ID_HERE/edit
 // 3. Copy the ID portion and paste it below
-const SPREADSHEET_ID = ''; // Add your Google Sheet ID here when created
+const SPREADSHEET_ID = '1zHgNnaoIUiSAGC0rERLfaiNvl0BuZ6xicZh1l3mgWtU'; // ARDHI Property Form Responses spreadsheet
 
 // Note: If you leave this empty, a new spreadsheet will be created when you run the setup() function
 

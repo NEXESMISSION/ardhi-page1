@@ -49,14 +49,14 @@ export function ProductDetails() {
       <div className="flex items-center justify-between">
         <div className="flex flex-col space-y-1">
           <div className="flex items-center space-x-4">
-          <span className="text-2xl md:text-3xl font-semibold text-black">4 500 TND</span>
+          <span className="text-2xl md:text-3xl font-semibold text-black whitespace-nowrap">4 500 TND</span>
           <span className="text-lg text-gray-500 line-through">5 000 TND</span>
           <span className="bg-red-500 text-white px-2 py-1 rounded text-sm">-17%</span>
           </div>
           <div className="mt-2 bg-blue-50 border-l-4 border-blue-500 px-4 py-2 rounded">
             <p className="font-semibold text-blue-800">Plan de paiement:</p>
-            <p className="text-blue-700 text-lg">• Avance: <span className="font-bold">1 500 TND</span></p>
-            <p className="text-blue-700 text-lg">• Mensualité: <span className="font-bold">70 TND/mois</span></p>
+            <p className="text-blue-700 text-lg whitespace-nowrap">• Avance: <span className="font-bold">1 500 TND</span></p>
+            <p className="text-blue-700 text-lg whitespace-nowrap">• Mensualité: <span className="font-bold">70 TND/mois</span></p>
           </div>
         </div>
         
