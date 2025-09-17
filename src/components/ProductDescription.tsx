@@ -42,15 +42,19 @@ export function ProductDescription() {
       <div className="text-center space-y-6 max-w-4xl mx-auto">
         <h2 className="text-3xl font-semibold">À Propos d'ARDHI Terrain Premium</h2>
         <p className="text-gray-700 leading-relaxed text-lg">
-          Sécurisez votre avenir avec cette opportunité d'investissement agricole. ARDHI Terrain Premium offre une 
-          valeur exceptionnelle avec ce terrain à Sfax, Tanyour km 24, parfait pour la plantation d'oliviers. 
-          Cette parcelle est soigneusement sélectionnée pour son potentiel agricole et son emplacement stratégique.
+          Assurez votre avenir avec une opportunité d'investissement agricole unique. ARDHI Terrain Premium propose 
+          une parcelle d'exception à Sfax, Tanyour km 24, idéale pour la plantation d'oliviers. Ce terrain a été 
+          soigneusement sélectionné pour son potentiel agricole et son emplacement stratégique.
         </p>
         <p className="text-gray-700 leading-relaxed">
-          Investissez dans la prospérité de demain aujourd'hui. Nos parcelles de terrain premium sont livrées avec des titres 
-          clairs, une excellente accessibilité, et sont situées dans des zones en développement rapide avec un fort potentiel 
-          d'appréciation. Chaque réservation inclut une entrée automatique à notre loterie exclusive pour une chance de gagner une 
-          parcelle supplémentaire de 2 000 m².
+          Investissez dès aujourd'hui dans la prospérité de demain. Nos parcelles premium bénéficient de titres 
+          clairs, d'une accessibilité optimale, et sont situées dans des zones à fort développement avec un potentiel 
+          d'appréciation important.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Chaque réservation vous donne également une chance exclusive de gagner une parcelle supplémentaire 
+          de 2 000 m² grâce à notre loterie spéciale. Ne manquez pas cette opportunité de sécuriser un investissement 
+          durable et rentable.
         </p>
         
         {/* Basic Specifications */}

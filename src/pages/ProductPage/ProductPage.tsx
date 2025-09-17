@@ -13,7 +13,9 @@ export const ProductPage = () => {
   const navigate = useNavigate();
   
   const goBack = () => {
+    // Navigate back and ensure page scrolls to top
     navigate('/');
+    window.scrollTo(0, 0);
   };
 
   const scrollToForm = () => {
