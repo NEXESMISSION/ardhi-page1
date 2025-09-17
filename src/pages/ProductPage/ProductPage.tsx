@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { Header } from '../../components/Header';
 import { ProductImage } from '../../components/ProductImage';
 import { ProductDetails } from '../../components/ProductDetails';
@@ -6,9 +7,15 @@ import { ProductDescription } from '../../components/ProductDescription';
 import { ClientForm } from '../../components/ClientForm';
 import { WhatsAppButton } from '../../components/WhatsAppButton';
 import { CountdownTimer } from '../../components/CountdownTimer';
-import { MapPin } from 'lucide-react';
+import { MapPin, ChevronLeft } from 'lucide-react';
 
 export const ProductPage = () => {
+  const navigate = useNavigate();
+  
+  const goBack = () => {
+    navigate('/');
+  };
+
   const scrollToForm = () => {
     const formElement = document.getElementById('client-form');
     if (formElement) {
@@ -39,6 +46,16 @@ export const ProductPage = () => {
       <Header />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Back Button */}
+        <div className="mb-6">
+          <button
+            onClick={goBack}
+            className="flex items-center text-gray-600 hover:text-gray-900 transition-colors bg-gray-100 hover:bg-gray-200 py-2 px-4 rounded-lg"
+          >
+            <ChevronLeft className="w-5 h-5 mr-2" />
+            <span>Retour aux terrains</span>
+          </button>
+        </div>
         {/* Product section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 mb-16 items-start">
           {/* Product image - centered alignment */}
